@@ -1,0 +1,301 @@
+
+:root {
+    --Primary: rgba(38, 143, 143, 0.8);
+    --PrimaryDark: rgba(12, 59, 59, 0.563);
+    --PrincipalFont: 'Courier New', Courier, monospace;
+    --Black: rgba(0, 0, 0, 0.9);
+    --white:rgba(255, 239, 239, 0.9);
+    --colorYw: rgba(255, 195, 0, 0.9);
+    --colorOt: rgb(236, 228, 157,0.9);
+    }
+
+.header {
+        background-image: url(./img/rick-and-morty-trippy.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 35rem;
+    }
+
+
+    html {
+    font-size: 75%;
+    box-sizing: border-box; 
+    }
+    
+  *, *:before, *:after {
+    box-sizing: inherit; 
+    }
+    
+    body {
+    margin: 0;
+    color: var(--white);
+    background-color: var(--Black);
+    font-size: 2rem;
+    font-family: var(--PrincipalFont);
+    }
+
+  * {
+    scroll-behavior: smooth;
+    }
+
+    h1 {
+    font-size: 2.5rem;
+}
+    h2 {
+    font-size: 2.75rem;
+    margin: 0;
+}
+    h3 {
+    font-size: 2.75rem;
+}
+    h4 {
+    font-size: 1.75rem;
+}
+    p {
+    margin: 0;
+}
+    img {
+    max-width: 100%;
+}
+    h1, h2, h3, h4 {
+    line-height: 1;
+}
+.Header2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+@keyframes flotar {
+    0%{transform: translate(0, 0);}
+    25%{transform: translate(0, -5px);}
+    75%{transform: translate(0, 5px);}
+    100%{transform: translate(0, 0);}
+}
+
+.Header-Seach-Con {
+    position: relative;
+}
+
+.Header-Seach-Con input {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.Header-Seach-Con input::placeholder {
+    text-align: center;
+}
+
+.Header-Seach-Con section {
+    position: absolute;
+    width: 100%;
+    background-color: var(--PrimaryDark);
+    border-end-start-radius: 8px;
+    border-end-end-radius: 8px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.Header-Seach-Con section.on {
+    display: block;
+}
+
+.Header-Seach-Con section.off {
+    display: none;
+}
+
+.Header-Seach-Con section p {
+    display: block;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.Header-Seach-Con section p:hover {
+    background-color: var(--Primary);
+}
+.BodyIL2 {
+    color:var(--white);
+    background-image: url(https://i.gifer.com/embedded/download/YAQN.gif) ;
+    background-size: cover;
+    font-weight: 450;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center;
+}
+
+.BodyIL > h1 {
+    color:var(--white);
+    background-image: url(https://i.gifer.com/embedded/download/YAQN.gif) ;
+    background-size: cover;
+    font-weight: 450;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center;
+}
+.Tittle_Info-LTion {
+    text-align: center;
+}
+
+.Info-LTion {
+    margin: 0 1.5rem;
+    border-radius: 4px;
+    background-color: var(--PrimaryDark);
+    max-width: 900px;    
+    padding: 0 1rem;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .Info-LTion {
+        margin: 0 auto;
+    }
+
+}
+
+.Tittle_Info-LTion h2 {
+    color: var(--colorOt);
+    padding: 2rem 0;
+}
+
+.InfoCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.InfoCard p span {
+    font-weight: bold;
+    color:var(--colorYw);
+}
+
+
+.LocationData {
+    margin: 2rem 1.5rem;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media (min-width: 900px) {
+    .LocationData {
+        margin: 2rem auto;
+    }
+}
+
+.CharResident {
+    position: relative;
+    width: 18rem;
+    background-color: var(--PrimaryDark);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ResidentStatus {
+    background-color: var(--Primary);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 8px;
+    padding-left: 5px;
+}
+
+.ResidentStatus i.Alive {
+    color: rgb(6, 242, 6,0.9);
+}
+
+.ResidentStatus i.Dead {
+    color: rgb(255, 0, 0, 0.9); }
+
+.ResidentStatus i.unknown {
+    color: rgb(117, 117, 117, 0.9);
+}
+
+.ResidentStatus p {
+    margin: 0;
+}
+
+.CharResident figure {
+    margin: 0;
+    width: 100%;
+}
+
+.CharResident figure figcaption {
+    margin: 0 1rem;
+}
+
+.CharResident > p {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.CharResident > p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.CharResident .ResidentTittle {
+    margin-top: 1rem;
+    color: var(--colorYw);
+}
+
+.LocationPage {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.LocationPage article {
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.LocationPage article.pageActive {
+    background-color: var(--PrimaryDark);
+}
+
+.LocationPage article:hover {
+    background-color: var(--PrimaryDark);
+}
+
+footer {
+    background-color: var(--PrimaryDark);
+    color:var(--white);
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: double;
+    color: white
+}
+
+.fIcons{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.fIcon{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

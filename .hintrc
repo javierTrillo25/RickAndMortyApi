@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "border-end-end-radius",
+          "border-end-start-radius",
+          "scroll-behavior"
+        ]
+      }
+    ]
+  }
+}
